@@ -13,7 +13,8 @@ let font: Style;
 interface Person {
     firstName: string;
     lastName: string;
-}
+    [key: string]: any; // allows for any additional property to be added to this object 
+}                       // while the first two are still required 
 
 const person: Person = {
     firstName: "Paul",
@@ -24,3 +25,13 @@ const person2: Person = {
     firstName: "Allen",
     lastName: "Roberts",
 }
+
+// variables followed by their types && the return type at the end ":string"
+function pow(x: number, y: number): string {
+    return Math.pow(x, y).toString();
+};
+
+// this function returns nothing, set return type to void
+function logMe(message: string): void {
+    console.log(message);
+};
