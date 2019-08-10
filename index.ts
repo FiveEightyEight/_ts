@@ -35,3 +35,16 @@ function pow(x: number, y: number): string {
 function logMe(message: string): void {
     console.log(message);
 };
+
+// strongly typed array 
+const arr: number[] = [];
+// type followed by []
+
+// can accept the types declared in array, the question mark denotes optional 
+type myTuple = [number?, string?, boolean?];
+
+const tuple: myTuple = [];
+
+tuple.push("string");
+
+console.log(tuple)
