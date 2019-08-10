@@ -1,5 +1,5 @@
 console.log("hello world")
-const url = new URL("...");
+// const url = new URL("...");
 
 const lucky = 100; // implicit declaration
 const oneHundred: number = lucky;  // explicitly 
@@ -46,5 +46,3 @@ type myTuple = [number?, string?, boolean?];
 const tuple: myTuple = [];
 
 tuple.push("string");
-
-console.log(tuple)
